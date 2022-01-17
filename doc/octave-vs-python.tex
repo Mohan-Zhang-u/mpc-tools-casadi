@@ -1,0 +1,23 @@
+\documentclass{article}
+
+\usepackage[margin=0.25in]{geometry}
+\usepackage{mpctools}
+
+\providecommand{\sepline}{\vspace{-2em}}
+
+\title{Octave vs. Python for Example 1.11}
+
+\begin{document}
+
+\begin{center}
+    \LARGE Octave vs. Python for Example 1.11
+\end{center}
+
+Below, we present an example file to show that, for our purposes, Python isn't that much different from Octave/\textsc{Matlab}
+On the left side, we show the the script written using Octave (\textsc{Matlab} compatibility requires breaking out the subfunctions), while on the right, we show the script rewritten to use Python+Casadi (with a bit of \texttt{mpc-tools-casadi} as well).
+
+\hspace{1em}
+
+\input{sidebyside-cstr.tex}
+
+\end{document}

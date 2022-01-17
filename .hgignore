@@ -1,0 +1,26 @@
+syntax: glob
+
+*.pyc
+*.pdf
+doc/*.tex
+doc/*.nav
+doc/*.vrb
+doc/*.out
+doc/*.log
+doc/*.aux
+doc/*.synctex.gz
+doc/*.snm
+doc/*.toc
+doc/*.bbl
+doc/*.blg
+doc/*.fls
+cstr-matlab/*
+runall-python*.log
+__local__/*
+build/*
+MPCTools-Python2.zip
+MPCTools-Python3.zip
+MPCTools-Python2/*
+MPCTools-Python3/*
+testzip*/*
+

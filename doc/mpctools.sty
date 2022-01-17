@@ -1,0 +1,78 @@
+% Provides some convenient latex commands.
+\usepackage{lmodern,textcomp,multicol,parcolumns,enumitem,array,booktabs}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[T1]{fontenc}
+\usepackage{mathtools,bm}
+\usepackage[utf8]{inputenc}
+
+\usepackage{listings}
+\definecolor{codegray}{gray}{0.5}
+
+\lstset{showstringspaces=false}
+
+\lstdefinestyle{makefile}{
+    language={[gnu]make},
+    numbers=left,
+    frame=lines,
+    basicstyle=\ttfamily,
+    keywordstyle=\color{Blue}\ttfamily,
+    stringstyle=\color{Purple}\ttfamily,
+    commentstyle=\color{ForestGreen}\ttfamily,
+    escapechar=@,
+    upquote=true,
+}
+
+\lstdefinestyle{shell}{
+    language=bash,
+    basicstyle=\ttfamily\footnotesize\color{codegray},
+    upquote=true,
+}
+
+\lstdefinestyle{python}{
+    language=Python,
+    basicstyle=\ttfamily\scriptsize,
+    keywordstyle=\color{Blue},
+    stringstyle=\color{Purple},
+    commentstyle=\color{ForestGreen},
+    escapechar=@,
+    upquote=true,
+}
+
+\lstdefinestyle{matlab}{
+    language=Matlab,
+    basicstyle=\ttfamily\scriptsize,
+    keywordstyle=\color{Blue},
+    stringstyle=\color{Purple},
+    commentstyle=\color{ForestGreen},
+    escapechar=!,
+    upquote=true,
+    morekeywords={endfunction},
+}
+
+\lstdefinestyle{output}{
+    basicstyle=\ttfamily\footnotesize,
+    keywordstyle=\ttfamily,
+    stringstyle=\ttfamily,
+    commentstyle=\ttfamily,
+    upquote=true,
+    showstringspaces=false,
+}
+
+\lstset{style=python}
+
+\newcommand{\codeemph}[1]{\textcolor{NavyBlue}{\small\bfseries #1}}
+\newcommand{\funcname}[2][.25em]{\vspace{#1}\noindent\texttt{#2}\nopagebreak\vspace{#1}}
+\newcommand{\smallurl}[2][\footnotesize]{\texttt{#1 #2}}
+
+\newcommand{\bitbucket}{\smallurl{https://bitbucket.org/rawlings-group/mpc-tools-casadi}}
+
+\usepackage{graphicx}
+\graphicspath{{./}{../}}
+
+\usepackage{tikz}
+\usetikzlibrary{trees}
+
+\newcommand{\casadi}{CasADi}
+\newcommand{\mpctools}{MPCTools}
+
+\providecommand{\sepline}{\vspace{-2em}}
